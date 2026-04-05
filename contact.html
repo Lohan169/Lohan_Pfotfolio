@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Md. Lohan Ali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-banner">
+            <span class="badge">Contact</span>
+            <h1>Get in Touch</h1>
+            <p>Reach out for collaboration, project inquiries, or to discuss web development and fitness initiatives.</p>
+        </section>
+
+        <section class="content-block grid-2">
+            <form class="form-grid" onsubmit="return showMsg()">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" pattern="[A-Za-z ]+" title="Only letters allowed" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="form-control" style="grid-column: span 1;">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="button primary">Send Message</button>
+            </form>
+
+            <div>
+                <h2 class="section-title">Contact Info</h2>
+                <p class="section-text">Feel free to connect with me through email or explore my portfolio pages to learn more about my work.</p>
+                <ul class="details-list">
+                    <li>Email: <span>mdlohanali566@email.com</span></li>
+                    <li>Location: <span>Bangladesh</span></li>
+                    <li>Availability: <span>Open to freelance & collaborations</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Md. Lohan Ali. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showMsg() {
+            alert('Message sent successfully!');
+            return true;
+        }
+    </script>
+</body>
+</html>
